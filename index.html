@@ -325,7 +325,7 @@
     color:rgba(255,255,255,.85);font-size:12px;text-align:center;padding:12px;
     position:relative;overflow:hidden;
   }
-  .polaroid .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:none;}
+  .polaroid .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:none;}
   .polaroid .caption{
     margin-top:12px;font-family:'Cormorant Garamond',serif;font-style:italic;
     font-size:15px;text-align:center;color:var(--ink);
@@ -1111,9 +1111,9 @@ if(gagTarget){
 
 /* ---------------- CAROUSEL ---------------- */
 const moments = [
-  {caption:"the smile that started it all", emoji:"🌷"},
-  {caption:"this smile, my favourite view", emoji:"🌙"},
-  {caption:"just you, exactly like this", emoji:"♡"}
+  {caption:"her, being silly, exactly how i love her", emoji:"🌷"},
+  {caption:"chasing views, but she's still the best one", emoji:"🌙"},
+  {caption:"this smile, my favourite view", emoji:"♡"}
 ];
 let currentSlide = 0;
 const stage = document.getElementById("polaroid-stage");
